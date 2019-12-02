@@ -44,17 +44,17 @@ r1,192.168.1.0/24,0.0.0.0,1
 
 ## Generating the Visual Representation
 
-After the ```.gv``` output file has been correctly generated, you can then use it in association with Graphviz's Dot to generate the visual representation. To do so, you must first have Graphviz installed in your system. For system-specific information on Graphviz information, check https://www.graphviz.org/download/.
+After the ```.gv``` output file has been correctly generated, you can then use it in association with Graphviz's Neato to generate the visual representation. To do so, you must first have Graphviz installed in your system. For system-specific information on Graphviz information, check https://www.graphviz.org/download/.
 
 With the ```.gv``` output file and Graphviz installed, you can easily generate the visualization file. 
 
 Let's assume you have used NetGraph to generate a ```.gv``` file called ```test.gv```. You could easily generate a corresponding PDF file by entering the command below:
 
 ```
-dot -Tpdf test.gv -o test.pdf
+neato -Tpdf test.gv -o test.pdf
 ```
 
-The ```-T``` parameter specifies the output format. In the example I used PDF, but other formats are supported (check https://graphviz.gitlab.io/_pages/pdf/dotguide.pdf).
+The ```-T``` parameter specifies the output format. In the example I used PDF, but other formats are supported (check https://graphviz.gitlab.io/_pages/pdf/neatoguide.pdf).
 
 After the command has run, you will have a visual representation in PDF of the network topology described in the text file.
 
