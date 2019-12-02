@@ -54,9 +54,9 @@ Let's assume you have used NetGraph to generate a ```.gv``` file called ```test.
 dot -Tpdf test.gv -o test.pdf
 ```
 
-The ```-T``` parameter specifies the output format. In the example we used pdf, but other formats are supported (check https://graphviz.gitlab.io/_pages/pdf/dotguide.pdf).
+The ```-T``` parameter specifies the output format. In the example I used PDF, but other formats are supported (check https://graphviz.gitlab.io/_pages/pdf/dotguide.pdf).
 
-After the command has run, you will have a visual representation of the initial network topology provided described in the text file.
+After the command has run, you will have a visual representation in PDF of the network topology described in the text file.
 
 ## Understanding the Visual Representation
 
@@ -71,4 +71,3 @@ Router ports are represented by hexagons, and hold information about the port's 
 Router tables are represented by the tables in the diagram, and hold the following information for each table entry: IP address, CIDR, next hop and router port.
 
 Routers are connected to their ports by blue edges, and to their router tables by red edges. Nodes and router ports residing within the same network are connected by black edges, which are labeled with the device's MTU. The black edges that represet the connection between devices residing within the same network connect each device to a black filled circle, which represents the interconnection device for that network (a switch or a hub for example).
-
