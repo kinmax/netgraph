@@ -57,3 +57,18 @@ dot -Tpdf test.gv -o test.pdf
 The ```-T``` parameter specifies the output format. In the example we used pdf, but other formats are supported (check https://graphviz.gitlab.io/_pages/pdf/dotguide.pdf).
 
 After the command has run, you will have a visual representation of the initial network topology provided described in the text file.
+
+## Understanding the Visual Representation
+
+In the visual representation, it is possible to see every aspect of the described topology, but first, it is important to understand what nodes and edges mean in the generated view.
+
+Nodes are represented by boxes, and hold information about the node's name, IP address, MAC address and default gateway's IP address.
+
+Routers are represented by empty circles, and hold information about the router's name.
+
+Router ports are represented by hexagons, and hold information about the port's number, IP address and MAC address.
+
+Router tables are represented by the tables in the diagram, and hold the following information for each table entry: IP address, CIDR, next hop and router port.
+
+Routers are connected to their ports by blue edges, and to their router tables by red edges. Nodes and router ports residing within the same network are connected by black edges, which are labeled with the device's MTU. The black edges that represet the connection between devices residing within the same network connect each device to a black filled circle, which represents the interconnection device for that network (a switch or a hub for example).
+
