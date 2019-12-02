@@ -54,6 +54,6 @@ Let's assume you have used NetGraph to generate a ```.gv``` file called ```test.
 dot -Tpdf test.gv -o test.pdf
 ```
 
-The ```-T``` parameter specifies the output format. In the example we used pdf, but other formats are supported (check https://graphviz.gitlab.io/_pages/pdf/dotguide.pdf).
+The ```-T``` parameter specifies the output format. In the example I used PDF, but other formats are supported (check https://graphviz.gitlab.io/_pages/pdf/dotguide.pdf).
 
 After the command has run, you will have a visual representation of the initial network topology provided described in the text file.
