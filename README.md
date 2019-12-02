@@ -70,4 +70,6 @@ Router ports are represented by hexagons, and hold information about the port's 
 
 Router tables are represented by the tables in the diagram, and hold the following information for each table entry: IP address, CIDR, next hop and router port.
 
-Routers are connected to their ports by blue edges, and to their router tables by red edges. Nodes and router ports residing within the same network are connected by black edges, which are labeled with the device's MTU. The black edges that represet the connection between devices residing within the same network connect each device to a black filled circle, which represents the interconnection device for that network (a switch or a hub for example).
+Routers are connected to their ports by blue edges, and to their router tables by red edges. Nodes and router ports residing within the same network are connected by black edges, which are labeled with the device's MTU. The black edges that represet the connection between devices residing within the same network connect each device to a black filled circle, which represents the interconnection device for that network (a switch or a hub for example). An example is shown below:
+
+![Alt text](test1.pdf?raw=true "Topology Visual Representation")
