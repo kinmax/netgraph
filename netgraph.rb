@@ -404,6 +404,7 @@ routers.each_with_index do |router, r_index|
     end
     gv_code += "router#{r_index} -- routertable#{r_index} [color = \"red\"];\n"
 end
+gv_code += "overlap=false;\nsplines=true;\n"
 gv_code += "}\n"
 
 gv_file = File.open(gv_file_path, "w")

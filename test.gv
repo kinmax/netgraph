@@ -60,4 +60,5 @@ router2 -- router2port0 [color = "blue"];
 router2 -- router2port1 [color = "blue"];
 router2 -- router2port2 [color = "blue"];
 router2 -- routertable2 [color = "red"];
-}
+overlap=false;
+splines=true;}
