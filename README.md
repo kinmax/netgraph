@@ -56,4 +56,4 @@ dot -Tpdf test.gv -o test.pdf
 
 The ```-T``` parameter specifies the output format. In the example I used PDF, but other formats are supported (check https://graphviz.gitlab.io/_pages/pdf/dotguide.pdf).
 
-After the command has run, you will have a visual representation of the initial network topology provided described in the text file.
+After the command has run, you will have a visual representation in PDF of the network topology described in the text file.
