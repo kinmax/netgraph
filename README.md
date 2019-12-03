@@ -6,7 +6,7 @@ NetGraph takes a network topology description file and converts it into a ```.gv
 
 ## Using NetGraph
 
-In order to use NetGraph, you must first make sure you have Ruby installed on your system. Check https://www.ruby-lang.org/pt/documentation/installation/#homebrew for system-specific installation instructions.
+In order to use NetGraph, you must first make sure you have Ruby installed on your system. Check https://www.ruby-lang.org/pt/documentation/installation/ for system-specific installation instructions.
 
 Once you have Ruby installed and set on your environment variables, you can run NetGraph by executing a line command in the following format (assuming you have the file ```netgraph.rb``` in your current working directory):
 
